@@ -1,0 +1,66 @@
+@charset "UTF-8";
+h1.caprion {
+  text-align: center;
+  margin: 4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding-left: 8rem;
+}
+
+.container.left {
+  padding-left: 0;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.person img {
+  margin-right: 2rem;
+  max-width: 16rem;
+}
+
+.person p {
+  font-size: 2rem;
+  position: relative;
+  max-width: 65ch;
+  -webkit-transform: rotate(-0.5deg);
+          transform: rotate(-0.5deg);
+}
+
+.person p::before {
+  content: "“";
+  font-size: 8rem;
+  position: absolute;
+  top: -40px;
+  left: -3rem;
+  color: rgba(59, 59, 59, 0.5);
+}
+
+.person:nth-child(2n) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.person:nth-child(2n) p {
+  -webkit-transform: rotate(0.5deg);
+          transform: rotate(0.5deg);
+}
+/*# sourceMappingURL=team.css.map */

@@ -1,0 +1,25 @@
+.faux-comments {
+  -webkit-transition: all 0.33s;
+  transition: all 0.33s;
+}
+
+.faux-comments.hidden {
+  opacity: 0;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #333;
+  margin: 1rem 0;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.comment img {
+  width: 64px;
+  height: 64px;
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=propos.css.map */

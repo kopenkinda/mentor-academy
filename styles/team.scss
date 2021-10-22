@@ -1,0 +1,46 @@
+h1.caprion {
+  text-align: center;
+  margin: 4rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding-left: 8rem;
+  &.left {
+    padding-left: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  img {
+    margin-right: 2rem;
+    max-width: 16rem;
+  }
+  p {
+    font-size: 2rem;
+    position: relative;
+    max-width: 65ch;
+    transform: rotate(-0.5deg);
+    &::before {
+      content: "“";
+      font-size: 8rem;
+      position: absolute;
+      top: -40px;
+      left: -3rem;
+      color: rgba(59, 59, 59, 0.5);
+    }
+  }
+  &:nth-child(2n) img {
+    order: 2;
+  }
+  &:nth-child(2n) p {
+    transform: rotate(0.5deg);
+  }
+}

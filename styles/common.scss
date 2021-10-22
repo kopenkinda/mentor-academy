@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --green: #23b2a4;
+  --green-op: rgba(35, 178, 164, 0.33);
+  --black: #1d1d1e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #000;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  h1 {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    margin-bottom: 4rem;
+  }
+  .logo {
+    margin-top: 4rem;
+    max-width: 12rem;
+  }
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &-item {
+    margin: 2rem 0;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 2rem;
+      &:hover,
+      &.active {
+        color: var(--green);
+      }
+    }
+    &.active a {
+      color: var(--green);
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20rem;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(var(--green-op), var(--green-op)), url(/assets/damn/images/Page8_1.jpg);
+  background-size: cover;
+  background-position: 60% center;
+}
+
+.img-w-text {
+  display: flex;
+}
+
+#show-comments {
+  padding: 1rem 2rem;
+  background-color: var(--green);
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #198177;
+  }
+}

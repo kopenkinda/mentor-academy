@@ -1,0 +1,35 @@
+body {
+  background-image: url(/assets/we.png);
+  background-size: contain;
+  background-position: center right;
+}
+
+header {
+  width: clamp(600px, 50%, 800px);
+  height: 100%;
+  background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+header .logo {
+  margin-top: 4rem;
+  max-width: 12rem;
+}
+/*# sourceMappingURL=style.css.map */

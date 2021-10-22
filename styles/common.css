@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --green: #23b2a4;
+  --green-op: rgba(35, 178, 164, 0.33);
+  --black: #1d1d1e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 4rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .logo {
+  margin-top: 4rem;
+  max-width: 12rem;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 2rem 0;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.menu-item a:hover, .menu-item a.active {
+  color: var(--green);
+}
+
+.menu-item.active a {
+  color: var(--green);
+}
+
+footer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20rem;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--green-op)), to(var(--green-op))), url(/assets/damn/images/Page8_1.jpg);
+  background-image: linear-gradient(var(--green-op), var(--green-op)), url(/assets/damn/images/Page8_1.jpg);
+  background-size: cover;
+  background-position: 60% center;
+}
+
+.img-w-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#show-comments {
+  padding: 1rem 2rem;
+  background-color: var(--green);
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#show-comments:hover {
+  background-color: #198177;
+}
+/*# sourceMappingURL=common.css.map */

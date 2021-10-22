@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/team.css">
+  <link rel="stylesheet" href="/styles/propos.css">
+  <title>Mentor Academy | Proposition 2021 - 2022</title>
+</head>
+<body>
+  <header>
+    <h1><a href="/">Mentor Academy</a></h1>
+    <ul class="menu">
+      <li class="menu-item"><a href="/team.html">Présentation</a></li>
+      <li class="menu-item"><a href="/missions.html">Missions</a></li>
+      <li class="menu-item"><a href="/engagements.html">Engagements</a></li>
+      <li class="menu-item"><a href="/approche.html">Pédagogie</a></li>
+      <li class="menu-item active"><a href="/propos.html">Proposition</a></li>
+    </ul>
+    <a href="https://www.ynov.com/"> <img src="/assets/logo_ynov_campus_bg_black.jpg" class="logo" alt="Logo Ynov"> </a>
+
+  </header>
+  <div class="container left">
+    <h1 class="caption">Proposition Mentor Academy 2021 - 2022</h1>
+    <p>Cette première édition de la Mentor Academy est une base très solide pour les futures années !</p>
+    <p>Voici quelques commentaires qui pouraient être étudié pour une session 2021 - 2022.</p>
+    <button id="show-comments">Afficher les commentaires</button>
+    <div class="faux-comments hidden">
+      <div class="comment">
+        <img src="/assets/profiles/2.png">
+        <p>Pourquoi pas avoir une partie où l'on travail la parole et la position d'en un espace ? Des cours de théâtre serait très apréciable !</p>
+      </div>
+      <div class="comment">
+        <img src="/assets/profiles/1.png">
+        <p>Rien à redire, c'était parfait ! Bordeaux est une ville magnifique ❤️</p>
+      </div>
+      <div class="comment">
+        <img src="/assets/profiles/4.png">
+        <p>Peut-être que les mentor de cette session pouraient participer activement à la formation des mentors de la session prochaine ? Cela permetrait de fournir des exemples concrets aux nouveaux mentors</p>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+    const btn = document.querySelector('#show-comments');
+    const comments = document.querySelector('.faux-comments');
+    btn.onclick= () => {
+      comments.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
